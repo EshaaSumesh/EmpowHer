@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="#FFEBEE">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period and Ovulation Calculator"
+        android:textSize="24sp"
+        android:textColor="#D32F2F"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etLastPeriodDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Period Date (YYYY-MM-DD)"
+        android:inputType="date"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+
+        android:textColor="#D32F2F" />
+
+    <EditText
+        android:id="@+id/etCycleLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Cycle Length (in days)"
+        android:inputType="number"
+        android:layout_below="@id/etLastPeriodDate"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+
+        android:textColor="#D32F2F" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/etCycleLength"
+
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#D32F2F"
+        android:visibility="gone"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResults"
+        android:layout_marginTop="16dp"
+        android:text="Tip: Maintain a healthy diet and stay hydrated for a smooth menstrual cycle."
+        android:textSize="16sp"
+        android:textColor="#D32F2F"
+        android:visibility="gone"
+        android:padding="12dp" />
+    <ImageView
+        android:id="@+id/footerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mh"
+        android:layout_below="@id/tvTip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

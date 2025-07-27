@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">EmpowHer</string>
+    <string name="enter_height_cm">Enter height (cm)</string>
+    <string name="enter_weight_kg">Enter weight (kg)</string>
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="bmi_result">BMI: </string>
+    <string name="drink_water_reminder">Drink Water Reminder</string>
+    <string name="enable_reminder">Enable Reminder</string>
+    <string name="fitness_and_diet_plans">Fitness and Diet Plans</string>
+    <string name="paleo">Paleo</string>
+    <string name="keto">Keto</string>
+    <string name="low_carb_diet">Low-Carb Diet</string>
+    <string name="whole30">Whole30</string>
+    <string name="vegan_diet">Vegan Diet</string>
+    <string name="period_tracker">Period Tracker</string>
+    <string name="enter_start_date_yyyy_mm_dd">Enter start date (yyyy-mm-dd)</string>
+    <string name="enter_duration_days">Enter duration (days)</string>
+    <string name="predict_next_period">Predict Next Period</string>
+    <string name="next_period">Next Period: </string>
+    <string name="sleep_tracker">Sleep Tracker</string>
+    <string name="enter_sleep_start_time">Enter sleep start time (HH:mm)</string>
+    <string name="enter_sleep_end_time">Enter sleep end time (HH:mm)</string>
+    <string name="track_sleep">Track Sleep</string>
+    <string name="mental_health_tips">Mental Health Tips</string>
+    <string name="get_tip">Get Tip</string>
+    <string name="social_sharing">Social Sharing</string>
+    <string name="share_achievement">Share Achievement</string>
+</resources>

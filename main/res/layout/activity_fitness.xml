@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- BMI Calculator -->
+        <TextView
+            android:id="@+id/tvBmiTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Calculator"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:hint="Enter height (cm)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter weight (kg)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnCalculateBmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate BMI"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvBmiResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI: "
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- Fitness and Diet Plans -->
+        <TextView
+            android:id="@+id/tvFitnessDiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness and Diet Plans"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDietPlans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbPaleo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paleo" />
+
+            <RadioButton
+                android:id="@+id/rbKeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keto" />
+
+            <RadioButton
+                android:id="@+id/rbLowCarb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low-Carb Diet" />
+
+            <RadioButton
+                android:id="@+id/rbWhole30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whole30" />
+
+            <RadioButton
+                android:id="@+id/rbVegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegan Diet" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/ivDietPlan"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- Mental Health Tips -->
+        <TextView
+            android:id="@+id/tvMentalHealthTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mental Health Tips"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnGetTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Tip"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvMentalHealthTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Social Sharing -->
+        <TextView
+            android:id="@+id/tvSocialSharing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Sharing"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnShareAchievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Achievement"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
